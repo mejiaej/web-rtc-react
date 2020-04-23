@@ -36,7 +36,7 @@ function App() {
   const socket = useRef();
 
   useEffect(() => {
-    socket.current = io.connect('http://192.168.1.12');
+    socket.current = io.connect('/');
     console.log('navigator.mediaDevices', navigator.mediaDevices);
     navigator.mediaDevices
       .getUserMedia({ video: true, audio: true })
